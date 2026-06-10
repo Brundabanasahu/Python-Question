@@ -6,9 +6,5 @@ def digit(n1):
         if digit!=0 and n1%digit==0:
             count+=1
     return count        
-
-
-
-
 n1=int(input())
 print(digit(n1))
