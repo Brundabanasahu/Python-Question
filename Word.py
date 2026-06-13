@@ -1,5 +1,6 @@
+import keyword
 var=input()
-key={"break", "case", "continue", "default", "defer", "else", "for","func", "goto", "if", "map", "range", "return", "struct", "type", "var"}
+key=keyword.kwlist
 if var in key:
     print("Keyword")
 else:
