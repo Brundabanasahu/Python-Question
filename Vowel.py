@@ -14,6 +14,6 @@ v,c=vow(s)
 print("Vowels =", v)
 print("Consonants =", c)
 
-
+ 
 # 29
 # 34
