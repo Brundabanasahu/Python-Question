@@ -12,7 +12,7 @@ def caesar(s,key):
             result+=ch
     return result
 
-
+s
 s=input()
 key=int(input())
 print(caesar(s, key))
