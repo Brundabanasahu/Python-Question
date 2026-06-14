@@ -19,4 +19,4 @@ selection_sort(arr)
 
 print("Sorted array:")
 for i in arr:
-    print(i, end=" ")
+    print(i, end=" ") 
