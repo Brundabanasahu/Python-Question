@@ -18,5 +18,6 @@ def secondlargest(arr):
             secondlargest=arr[i]
     return secondlargest
 
-arr=[52,585,0,526,85,25,85,52]
+n = int(input("Enter the size of the array:"))
+arr = list(map(int, input("Enter the elements:").split()))
 print(secondlargest(arr))

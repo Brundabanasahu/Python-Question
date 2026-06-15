@@ -9,14 +9,6 @@ def insertion_sort(arr):
 
     return arr        
 
-
-
-
-
-
-
-
-
 n = int(input("Enter the size of the array:"))
 arr = list(map(int, input("Enter the elements:").split()))  
 
