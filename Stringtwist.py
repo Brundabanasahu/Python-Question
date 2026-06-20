@@ -12,13 +12,11 @@ for i in s1:
     else:
         result+=i
 
-
 for i in s2:
     if i not in vowel:
         result+="#"
     else:
         result+=i
-
 
 for ch in s3:
     if 'a'<=ch<='z':
@@ -26,4 +24,6 @@ for ch in s3:
     else:
         result+=ch
 
-print(result)
+print(result)  
+
+#tcs 2021 no-13
