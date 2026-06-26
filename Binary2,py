@@ -1,0 +1,44 @@
+# n = int(input())
+
+# binary = bin(n)[2:]
+
+# toggle = ""
+
+# for bit in binary:
+#     if bit == '0':
+#         toggle += '1'
+#     else:
+#         toggle += '0'
+
+# print(int(toggle, 2))
+
+
+
+
+
+n = int(input())
+
+transactions = []
+
+for i in range(n):
+    sender, receiver, amount, time = input().split()
+    transactions.append([sender, receiver, float(amount), int(time)])
+
+fraud = set()
+
+for i in range(n):
+    for j in range(i + 1, n):
+
+        if (transactions[i][0] == transactions[j][0] and
+            transactions[i][1] == transactions[j][1] and
+            transactions[i][2] == transactions[j][2] and
+            abs(transactions[i][3] - transactions[j][3]) <= 60):
+
+            fraud.add(i)
+            fraud.add(j)
+
+for i in sorted(fraud):
+    print(transactions[i][0],
+          transactions[i][1],
+          "{:.2f}".format(transactions[i][2]),
+          transactions[i][3])
